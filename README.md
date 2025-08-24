@@ -5,7 +5,7 @@ Pima Indian Diabetes - Hyperparameter Optimization with Optuna
 This project applies Optuna, a powerful hyperparameter optimization framework, to the Pima Indian Diabetes dataset.
 The main objective is not just to train a classifier but to learn, explore, and understand how Optuna works, including:
 
-Different samplers (e.g., TPE, Random, CMA-ES).
+Different samplers (e.g., TPE, Random,custom).
 
 Different pruners (for efficient early stopping).
 
@@ -15,7 +15,7 @@ Best practices for hyperparameter tuning.
 
 📂 Dataset
 
-Dataset: Pima Indians Diabetes dataset (from UCI repository / sklearn / Kaggle).
+Dataset: Pima Indians Diabetes dataset (Kaggle).
 
 Task: Binary classification – predicting whether a patient has diabetes or not.
 
@@ -23,7 +23,7 @@ Features: 8 numerical medical attributes (e.g., glucose level, BMI, age).
 
 ⚙️ Methods
 
-Model(s) Tried: (e.g., Logistic Regression, RandomForest, XGBoost – adjust based on your work).
+Model(s) Tried: (e.g RandomForest, XGBoost).
 
 Hyperparameters Tuned: Learning rate, depth, regularization, estimators, etc.
 
@@ -38,8 +38,6 @@ Use Optuna samplers to explore hyperparameter space:
 TPESampler (Tree-structured Parzen Estimator)
 
 RandomSampler
-
-(optionally) CmaEsSampler
 
 Optionally apply pruners to save time:
 
